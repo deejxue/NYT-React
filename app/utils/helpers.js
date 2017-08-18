@@ -1,11 +1,12 @@
+// Require the package AXIOS for ajax calls
 var axios = require('axios');
-
+// NYT API key variable
 var APIKey = '3dbfbf1bb1034c4bb5e8901725645c29';
-
+// Define helpers for export
 var helpers = {
-
+// URL query 
   runQuery: function(term, start, end)  {
-
+// define my variables for search term, start dates, and end dates
     var term = term.trim();
     var start = start.trim() + "0101";
     var end = end.trim() + "1231";
@@ -22,7 +23,6 @@ var helpers = {
     .then(function(results){
 
       return results.data.response;
-
     });
   },
 
@@ -42,7 +42,6 @@ var helpers = {
       .then(function(results){
         return results._id;
       })
-
   },
 
   deleteSaved: function(title, data, url){
@@ -58,7 +57,6 @@ var helpers = {
       return results;
     })
   }
-
 }
 
 module.exports = helpers;

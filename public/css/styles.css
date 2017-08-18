@@ -1,0 +1,41 @@
+/* Space out content a bit */
+
+body {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  background: url("/img/CoffeeNewspaper.jpg");
+}
+
+/* Custom page header */
+
+.navbar-brand {
+  background-color: red;
+  opacity: 0.8;
+}
+
+/* The query section */
+
+#query-title {
+  border-radius: 25px;
+  background-color: red;
+}
+
+.main-container {
+    border-radius: 25px;
+}
+
+#article-title {
+  border-radius: 25px;
+  background-color: black;
+  color: red;
+}
+
+#saved-panBody {
+    background-color: grey;
+    opacity: 0.9;
+}
+
+#new-articles {
+  border-radius: 25px;
+  background-color: red;
+}

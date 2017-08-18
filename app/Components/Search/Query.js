@@ -36,7 +36,7 @@ var Query = React.createClass({
 
               <div className="panel panel-primary">
                 <div className="panel-heading">
-                  <h1 className="panel-title"><strong><i className="fa fa-newspaper-o" aria-hidden="true"></i>  Query</strong></h1>
+                  <h1 className="panel-title" id="query-title"><strong><i className="fa fa-newspaper-o" aria-hidden="true"></i>  Query</strong></h1>
                 </div>
                 <div className="panel-body">
 

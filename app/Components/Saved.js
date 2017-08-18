@@ -65,7 +65,7 @@ var Main = React.createClass({
               <li className="list-group-item" >
 
                 <h3>
-                  <span><em>{article.title}</em></span>
+                  <span id="article-title"><em>{article.title}</em></span>
                   <span className="btn-group pull-right" >
                     <a href={article.url} target="_blank"><button className="btn btn-default ">View Article</button></a>
                     <button className="btn btn-primary" onClick={this.handleClick.bind(this, article)}>Delete</button>

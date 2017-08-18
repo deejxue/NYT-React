@@ -62,7 +62,7 @@ var Main = React.createClass({
             <div key={index}>
               <li className="list-group-item" >
                 <h3>
-                    <span><em>{article.title}</em></span>
+                    <span id="new-articles"><em>{article.title}</em></span>
                     <span className="btn-group pull-right" >
                       <a href={article.url} target="_blank"><button className="btn btn-default ">View Article</button></a>
                       <button className="btn btn-primary" onClick={this.handleClick.bind(this, article)}>Delete</button>
@@ -91,7 +91,7 @@ var Main = React.createClass({
               </div>
               <div className="panel-body">
                 <ul className="list-group">
-                  Trump Does something
+                  
                 </ul>
               </div>
             </div>
