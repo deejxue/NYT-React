@@ -10,7 +10,7 @@
 ## Table of Contents
 
 - [About NYT Article Miner](#about-nyt-article-miner)
-- [More info about creating the app](#creating-the app)
+- [More info about creating the app](#creating-the-app)
 - [Install the app locally](#downloading-and-installing)
 - [Additional features to add](#additional-features-to-add)
 
