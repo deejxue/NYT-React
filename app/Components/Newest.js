@@ -58,14 +58,15 @@ var Main = React.createClass({
       var articles = this.state.newestArticle.map(function(article, index){
 
         return(
-
+                  // View the list of articles with emphasized text-> <em>
+                  // Buttons for viewing and deleting
             <div key={index}>
               <li className="list-group-item" >
                 <h3>
                     <span id="new-articles"><em>{article.title}</em></span>
                     <span className="btn-group pull-right" >
                       <a href={article.url} target="_blank"><button className="btn btn-default ">View Article</button></a>
-                      <button className="btn btn-primary" onClick={this.handleClick.bind(this, article)}>Delete</button>
+                      <button className="btn btn-primary" id="buttonDelete" onClick={this.handleClick.bind(this, article)}>Delete</button>
                     </span>
                 </h3>
                 <p>Date Published: {article.date}</p>
@@ -84,7 +85,7 @@ var Main = React.createClass({
         <div className="row">
           <div className="col-lg-12">
             <div className="panel panel-primary">
-              <div className="panel-heading">
+              <div className="panel-heading" id="panel-heading">
                 <h1 className="panel-title">
                   <strong><i className="fa fa-download" aria-hidden="true"></i> New! </strong>
                 </h1>

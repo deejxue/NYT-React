@@ -34,7 +34,7 @@ var Main = React.createClass({
           </nav>
 
           <div className="jumbotron">
-            <h2 className="text-center"><strong>New York Times Article Scrubber</strong></h2>
+            <h2 className="text-center" id="main-headliner"><strong>New York Times Article Scrubber</strong></h2>
           </div>
 
           {this.props.children}

@@ -7,6 +7,13 @@ body {
 }
 
 /* Custom page header */
+.jumbotron {
+    background-color: #29364B;
+}
+
+#main-headliner {
+    color: red;
+}
 
 .navbar-brand {
   background-color: red;
@@ -25,17 +32,39 @@ body {
 }
 
 #article-title {
-  border-radius: 25px;
-  background-color: black;
   color: red;
 }
 
-#saved-panBody {
-    background-color: grey;
+#panel-title {
+    background-color: red;
     opacity: 0.9;
 }
 
 #new-articles {
   border-radius: 25px;
   background-color: red;
+}
+
+#form-control {
+    border-color: #29364B;
+}
+
+#panel-heading, #query-header {
+    background-color: red;
+}
+
+#toBeginEm, #viewArtEm {
+    color: red;
+}
+
+#buttonView {
+    background-color: #29364B;
+}
+
+#buttonSave, #buttonDelete {
+    background-color: #EF0213;
+}
+
+#buttonSubmit {
+    background-color: #29364B;
 }

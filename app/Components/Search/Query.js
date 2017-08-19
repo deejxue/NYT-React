@@ -35,8 +35,8 @@ var Query = React.createClass({
             <div className="col-lg-12">
 
               <div className="panel panel-primary">
-                <div className="panel-heading">
-                  <h1 className="panel-title" id="query-title"><strong><i className="fa fa-newspaper-o" aria-hidden="true"></i>  Query</strong></h1>
+                <div className="panel-heading" id="query-header">
+                  <h1 className="panel-title"><strong><i className="fa fa-newspaper-o" aria-hidden="true"></i>  Query</strong></h1>
                 </div>
                 <div className="panel-body">
 
@@ -54,7 +54,7 @@ var Query = React.createClass({
                     </div>
 
                     <div className="pull-right">
-                      <button type="button" className="btn btn-primary" onClick={this.handleSubmit}><h4>Submit</h4></button>
+                      <button type="button" className="btn btn-danger" id="buttonSubmit" onClick={this.handleSubmit}><h4>Submit</h4></button>
                     </div>
                   </form>
 

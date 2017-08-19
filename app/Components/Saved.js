@@ -67,8 +67,8 @@ var Main = React.createClass({
                 <h3>
                   <span id="article-title"><em>{article.title}</em></span>
                   <span className="btn-group pull-right" >
-                    <a href={article.url} target="_blank"><button className="btn btn-default ">View Article</button></a>
-                    <button className="btn btn-primary" onClick={this.handleClick.bind(this, article)}>Delete</button>
+                    <a href={article.url} target="_blank"><button className="btn btn-default" id="buttonView">View Article</button></a>
+                    <button className="btn btn-primary" id="buttonDelete" onClick={this.handleClick.bind(this, article)}>Delete</button>
                   </span>
                 </h3>
                 <p>Date Published: {article.date}</p>
@@ -89,10 +89,10 @@ var Main = React.createClass({
           <div className="col-lg-12">
 
             <div className="panel panel-primary">
-              <div className="panel-heading">
+              <div className="panel-heading" id="panel-heading">
                 <h1 className="panel-title"><strong><i className="fa fa-download" aria-hidden="true"></i> Saved Articles</strong></h1>
               </div>
-              <div className="panel-body">
+              <div className="panel-body" id="saved-panBody">
                 <ul className="list-group">
                   {articles}
                 </ul>

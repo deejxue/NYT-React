@@ -29,7 +29,7 @@ var Results = React.createClass({
 
         <li className="list-group-item">
 
-          <h3>
+          <h3 id="toBeginEm">
               <span><em>Search for articles to begin.</em></span>
           </h3>
 
@@ -50,11 +50,11 @@ var Results = React.createClass({
               <li className="list-group-item" >
 
               <h3>
-                  <span><em>{article.headline.main}</em></span>
+                  <span><em id="viewArtEm">{article.headline.main}</em></span>
                 <span className="btn-group pull-right" >
-                  <a href={article.web_url} target="_blank"><button className="btn btn-default ">View Article</button></a>
+                  <a href={article.web_url} target="_blank"><button className="btn btn-primary" id="buttonView">View Article</button></a>
 
-                  <button className="btn btn-primary" onClick={this.handleClick.bind(this, article)}>Save</button>
+                  <button className="btn btn-primary" id="buttonSave" onClick={this.handleClick.bind(this, article)}>Save</button>
                 </span>
               </h3>
               <p>Date Published: {article.pub_date}</p>
@@ -76,7 +76,7 @@ var Results = React.createClass({
           <div className="col-lg-12">
 
             <div className="panel panel-primary">
-              <div className="panel-heading">
+              <div className="panel-heading" id="panel-heading">
                 <h1 className="panel-title"><strong><i className="fa fa-list-alt"></i>  Results</strong></h1>
               </div>
               <div className="panel-body">
