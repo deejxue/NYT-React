@@ -21,9 +21,19 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 app.use(express.static("public"));
 
 // -------------------------------------------------
-
 // MongoDB Configuration configuration (Change this URL to your own DB)
-mongoose.connect("mongodb://localhost/nytreact");
+
+// Define local MongoDB URI
+var databaseUri = 'mongodb://localhost/nytreact';
+
+if (process.env.MONGODB_URI) {
+  mongoose.connect(process.env.MONGODB_URI);
+} else {
+  // this executes if it is being executed in HEROKU
+  mongoose.connect(databaseUri);
+}
+// ===========================================
+
 var db = mongoose.connection;
 console.log(db);
 
